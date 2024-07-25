@@ -28,10 +28,10 @@ public class ScannerTest {
         assertTrue(Scanner.isValidIP("200.130.0.255"));
         assertTrue(Scanner.isValidIP("0.0.0.0"));
         assertTrue(Scanner.isValidIP("255.255.255.255"));
-        //assertFalse(Scanner.isValidIP("255.256.255.255"));
-        //assertFalse(Scanner.isValidIP("300.1.255.255"));
-        //assertFalse(Scanner.isValidIP("999.1.255.255"));
-        //assertFalse(Scanner.isValidIP("200.1.255"));
+        assertFalse(Scanner.isValidIP("255.256.255.255"));
+        assertFalse(Scanner.isValidIP("300.1.255.255"));
+        assertFalse(Scanner.isValidIP("999.1.255.255"));
+        assertFalse(Scanner.isValidIP("200.1.255"));
         
     }
 }
